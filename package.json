@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "start": "nodemon --exec babel-node server.js",
-    "build": "react-scripts build"
+    "dev": "nodemon --exec babel-node server.js",
+    "build": "echo 'No build step required'"
   },
   "keywords": [],
   "author": "",
@@ -33,9 +37,10 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.18.10",
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.0",
     "@babel/node": "^7.18.10",
-    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-env": "^7.26.0",
     "react-scripts": "^5.0.1",
     "sequelize-cli": "^6.4.1"
   }
